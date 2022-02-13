@@ -1,10 +1,4 @@
-import mysql from 'mysql2';
-
-export const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'test',
-});
+import { connection } from './ConnectionToDatabase.js';
 
 const createDatabase = () => {
 	connection.connect(error => {
