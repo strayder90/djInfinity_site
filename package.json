@@ -2,10 +2,11 @@
   "name": "simple_app",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "main.html",
+  "default": "./frontend/views/main.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./frontend/views/main.html --dist-dir ./dist",
+    "build": "parcel build ./frontend/views/main.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,7 @@
     "url": "https://github.com/strayder90/simple_app/issues"
   },
   "homepage": "https://github.com/strayder90/simple_app#readme",
-  "dependencies": {}
+  "devDependencies": {
+    "parcel": "^2.3.1"
+  }
 }

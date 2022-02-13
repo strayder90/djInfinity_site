@@ -1,0 +1,2 @@
+$(document).ready((function(){$(".carousel").carousel({interval:5e3}),$(".carousel").carousel("cycle"),$("#top-nav").onePageNav({currentClass:"active",changeHash:!0,scrollSpeed:500})})),$(window).scroll((function(){$("#about,.album,.blogevent ul li").each((function(){$(this).offset().top<$(window).scrollTop()+400&&$(this).addClass("animated fadeInUp")})),$("h3,h4").each((function(){$(this).offset().top<$(window).scrollTop()+500&&$(this).addClass("animated fadeInUp")}))}));
+//# sourceMappingURL=main.31547672.js.map
